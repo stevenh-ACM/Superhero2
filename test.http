@@ -1,0 +1,30 @@
+###GET ALL
+GET https://localhost:7262/api/Superhero HTTP/1.1
+
+### Get ONE
+GET https://localhost:7262/api/Superhero?id=2 HTTP/1.1
+
+### Get ONE with new route
+GET https://localhost:7262/api/Superhero/2 HTTP/1.1
+
+
+### Create one
+POST https://localhost:7262/api/superhero HTTP/1.1
+Content-Type: application/json
+
+{
+    "id": 1,
+    "name": "Flashy"
+}
+
+### Update
+PUT https://localhost:7262/api/superhero HTTP/1.1
+Content-Type: application/json
+
+{
+    "id": 6,
+    "name": "Aquaman"
+}
+
+### Delete one /6
+DELETE https://localhost:7262/api/superhero/6
